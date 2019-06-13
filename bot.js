@@ -43,7 +43,7 @@ client.on("message", (message) => {
   }else
 	  if(message.content.includes ("andy")) {
 		if(message.content.includes ("teeth")) {
-		message.channel.send("andy did nothing wrong ever");
+		message.channel.send("andy did nothing wrong, ever");
 	}}else 
 	  //piss
 	  if(message.content.includes("piss")) {
