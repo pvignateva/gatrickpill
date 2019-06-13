@@ -30,6 +30,12 @@ client.on("message", (message) => {
 	if(message.content.includes("69")) {
 	message.channel.send("nice");
   }else
+	  if(message.content.includes("terf")) {
+	message.channel.send("of fuck terfs");
+  }else
+	  if(message.content.includes("piss")) {
+	message.channel.send("knock it off kids. this is a no piss zone. cmon, we ve been over this");
+  }else
 	 if(message.content.startsWith("its,")) {
     message.channel.send("its, soup");
   }else
