@@ -30,6 +30,9 @@ client.on("message", (message) => {
 	if(message.content.includes("69")) {
 	message.channel.send("nice");
   }else
+	  if(message.content.includes("420")) {
+	message.channel.send("there s no weed in soviet union...");
+  }else
 	  if(message.content.includes("terf")) {
 	message.channel.send("fuck terfs");
   }else
