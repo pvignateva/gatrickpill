@@ -7,6 +7,7 @@ const munch = ["i wanna m", "I WANNA M", "i want to m", "I WANT TO M", "i waant 
 const uwu = ["uwu", "wuv", "patbot pwease", "patbot ily", "ily patbot"];
 const games = ["sekiro", "SEKIRO", "bloodborne", "blood borne", "BLOODBORNE"];
 const doom = ["DOOM", "doom"];
+const kink = ["kink", "fetish"];
 //console reply
 client.on("ready", () => {
   console.log("sir, yes sir!!");
@@ -51,6 +52,9 @@ client.on("message", (message) => {
 		if(message.content.includes ("good?")) {
 		message.channel.send("boyp howduy");
 	}}else  
+		if( kink.some(word => message.content.includes(word)) ) {
+	message.channel.send("nasty");
+}else
 	//reply with emoji
 
 	//validation
