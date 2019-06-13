@@ -14,6 +14,7 @@ client.on("ready", () => {
 
 //main
 client.on("message", (message) => {
+	if (message.author.bot) return;
 	//reply to trigger text with text
 	//hewwo - hewwo? hewwoo-o
 	if(message.content.startsWith("hewwo")) {
@@ -23,7 +24,6 @@ client.on("message", (message) => {
     message.channel.send( "Hewwo…… H-hewwo? (;•́︿•̀ ;)…………… Hewwo ( ͡° ͜ʖ ͡°)" );
   }else
 	  if(message.content.includes("stummy huwt")) {
-		  if (!message.author.bot) return;
     message.channel.send( " stummy huwt! stummy huwt! i got a bad tummy mistew cybewpunk! i got go sweepy now!" );
   }else
 	// 69 - nice
