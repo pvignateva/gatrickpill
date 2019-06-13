@@ -67,7 +67,7 @@ client.on("message", (message) => {
 		
 	//munch squad
 	if( munch.some(word => message.content.includes(word)) ) {
-	message.reply("SQUAD!!");
+	message.channel.send("SQUAD!!");
 }
 		
 });
