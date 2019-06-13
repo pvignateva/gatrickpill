@@ -31,7 +31,7 @@ client.on("message", (message) => {
 	message.channel.send("nice");
   }else
 	  if(message.content.includes("terf")) {
-	message.channel.send("of fuck terfs");
+	message.channel.send("fuck terfs");
   }else
 	  if(message.content.includes("piss")) {
 	message.channel.send("knock it off kids. this is a no piss zone. cmon, we ve been over this");
