@@ -35,9 +35,7 @@ client.on("message", (message) => {
 	 if(message.content.includes(",,,,,")) {
 	message.channel.send("its, soup");
   }else
-	if(message.content.includes("piss")) {
-	message.channel.send("knock it off, kids. it s a piss free chat, we talked about this");
-  }else
+	
 	 //2 conditions
 	if(message.content.includes ("is")) {
 		if(message.content.includes ("good?")) {
