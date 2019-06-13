@@ -34,7 +34,7 @@ client.on("message", (message) => {
 	message.channel.send("fuck terfs");
   }else
 	  if(message.content.includes("piss")) {
-	message.channel.send("knock it off kids. this is a no piss zone. cmon, we ve been over this");
+	message.channel.send("...piss? no, knock it off, kids. i have an allergy");
   }else
 	 if(message.content.startsWith("its,")) {
     message.channel.send("its, soup");
