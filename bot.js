@@ -62,6 +62,10 @@ client.on("message", (message) => {
 		if(message.content.includes ("please")) {
 		message.react("586593863200931890");
 	}}else 	
+		f(message.content.includes ("andy")) {
+		if(message.content.includes ("teeth")) {
+		message.channel.send("andy did nothing wrong ever. they re leo btw");
+	}}else 
 	//opression
 	if(message.content.includes ("oppress andy")) {
 	message.react("586577717990916097");
