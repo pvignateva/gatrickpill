@@ -16,13 +16,14 @@ client.on("ready", () => {
 client.on("message", (message) => {
 	//reply to trigger text with text
 	//hewwo - hewwo? hewwoo-o
+	if (!message.author.bot) return;
 	if(message.content.startsWith("hewwo")) {
     message.channel.send( "H….hewwo? (;•́︿•̀ ;) Is anybody out here? (　•́ ‸•̀｀) Hewwo??? Hewwo?!?!?  Σ ( •́△•̀|||)" );
   }else
 	  if(message.content.startsWith("HEWWO")) {
     message.channel.send( "Hewwo…… H-hewwo? (;•́︿•̀ ;)…………… Hewwo ( ͡° ͜ʖ ͡°)" );
   }else
-	  if(message.content.includes("stummy huwt")|| message.author.bot) {
+	  if(message.content.includes("stummy huwt")) {
     message.channel.send( " stummy huwt! stummy huwt! i got a bad tummy mistew cybewpunk! i got go sweepy now!" );
   }else
 	// 69 - nice
