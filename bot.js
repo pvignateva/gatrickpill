@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 //var
 const munch = ["i wanna m", "I WANNA M", "i want to m", "I WANT TO M", "i waant to m", "i waaant to m", "I WAANT TO M", "I WAAANT TO M", "I WANNAA M", "i wannaa m", "i wannaaa m", "I WANNAAA M"];
-const uwu = ["uwu", "wuv", "patbot pwease", "ily"];
+const uwu = ["uwu", "wuv", "patbot pwease", "patbot ily", "ily patbot"];
 const games = ["sekiro", "SEKIRO", "bloodborne", "blood borne", "BLOODBORNE"];
 const doom = ["DOOM", "doom"];
 //console reply
