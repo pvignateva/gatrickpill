@@ -8,24 +8,6 @@ const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
 
-//randomizer for ping
-function randomswear(){
-	var randomNumber = Math.round(Math.random()*10); 
-	switch(randomNumber){
-		case 0: return 'fuck';
-		case 1: return '1-800-eat-shit';
-		case 2: return 'moistey bastard boy';
-		case 3: return 'oh fuck off';
-		case 4: return 'dickhead';
-		case 5: return 'piss off';
-		case 6: return 'heck';
-		case 7: return 'bloody hell';
-		case 8: return 'wanker';
-		case 9: return 'you absolute fool';
-		case 10: return 'get fucked';
-	}
-}
-
 //randomizer for hewwo
 function randomhewwo(){
 	var randomNumber = Math.round(Math.random()*3); 
@@ -138,11 +120,6 @@ client.on("message", (message) => {
 	}else 
 	
 	//text triggers random text
-	
-	//!swear ping
-	if(message.content.includes("!swear")){
-		message.channel.send(randomswear());
-	}else
 		
 	//piss
 	if(message.content.includes("!piss")){
