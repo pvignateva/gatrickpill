@@ -168,9 +168,7 @@ client.on("message", (message) => {
 	//doyouyearn
   	if(doyouyearn.some(word => message.content.includes(word))){
 		message.channel.send(randomyearn());
-	}else
-	
-	
+	}	
 	
 //main end brackets	
 });
