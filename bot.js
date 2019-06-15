@@ -55,6 +55,24 @@ function randompiss(){
 	}
 }
 
+//randomizer for ping
+function randomswear(){
+    var randomNumber = Math.round(Math.random()*10); 
+    switch(randomNumber){
+        case 0: return 'fuck';
+        case 1: return '1-800-eat-shit';
+        case 2: return 'moistey bastard boy';
+        case 3: return 'oh fuck off';
+        case 4: return 'dickhead';
+        case 5: return 'piss off';
+        case 6: return 'heck';
+        case 7: return 'bloody hell';
+        case 8: return 'wanker';
+        case 9: return 'you absolute fool';
+        case 10: return 'get fucked';
+    }
+}
+
 //console reply
 client.on("ready", () => {
   console.log("sir, yes sir!!");
@@ -121,9 +139,14 @@ client.on("message", (message) => {
 	
 	//text triggers random text
 		
+	//!swear ping
+  	if(message.content.includes("!swear")){
+        	message.channel.send(randomswear());
+	}else
+		
 	//piss
-	if(message.content.includes("!piss")){
-		message.channel.send(randompiss());
+	if(message.content.includes("piss")){
+        	message.channel.send("piss");
 	}else
 	
 	//acab
@@ -133,7 +156,7 @@ client.on("message", (message) => {
 	
 	//hewwo
   	if(hewwo.some(word => message.content.includes(word))){
-		message.channel.send(randomhewwo());
+		message.channel.send(randompiss());
 	}else
 	
 	//doyouyearn
