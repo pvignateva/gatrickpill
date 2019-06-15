@@ -4,6 +4,7 @@ const client = new Discord.Client();
 
 //var
 const acab = ["cop", "police"];
+const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 
 //randomizer for ping
 function randomswear(){
@@ -24,6 +25,17 @@ function randomswear(){
 }
 
 //randomizer for acab
+function randomacab(){
+	var randomNumber = Math.round(Math.random()*3); 
+	switch(randomNumber){
+		case 0: return 'H….hewwo? (;•́︿•̀ ;) Is anybody out here? (　•́ ‸•̀｀) Hewwo??? Hewwo?!?!?  Σ ( •́△•̀|||) )';
+		case 1: return 'Hewwo…… H-hewwo? (;•́︿•̀ ;)…………… Hewwo ( ͡° ͜ʖ ͡°)';
+		case 2: return 'Hewwo ( ͡° ͜ʖ ͡°)';
+		case 3: return 'H….hewwo?';
+	}
+}
+
+//randomizer for hewwo
 function randomacab(){
 	var randomNumber = Math.round(Math.random()*3); 
 	switch(randomNumber){
@@ -63,6 +75,11 @@ client.on("message", (message) => {
 	//acab ping
   	if(acab.some(word => message.content.includes(word))){
 		message.channel.send(randomacab());
+	}
+	
+	//acab ping
+  	if(hewwo.some(word => message.content.includes(word))){
+		message.channel.send(randomhewwo());
 	}
 	
 //main end brackets	
