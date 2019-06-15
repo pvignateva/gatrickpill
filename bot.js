@@ -143,11 +143,6 @@ client.on("message", (message) => {
   	if(message.content.includes("!swear")){
         	message.channel.send(randomswear());
 	}else
-		
-	//piss
-	if(message.content.includes("piss")){
-        	message.channel.send("piss");
-	}else
 	
 	//acab
   	if(acab.some(word => message.content.includes(word))){
@@ -156,13 +151,18 @@ client.on("message", (message) => {
 	
 	//hewwo
   	if(hewwo.some(word => message.content.includes(word))){
-		message.channel.send(randompiss());
+		message.channel.send(randomhewwo());
 	}else
 	
 	//doyouyearn
   	if(doyouyearn.some(word => message.content.includes(word))){
 		message.channel.send(randomyearn());
-	}	
+	}else
+		
+	//piss
+  	if(message.content.includes("piss")){
+		message.channel.send(randompiss());
+	}
 	
 //main end brackets	
 });
