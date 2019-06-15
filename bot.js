@@ -5,6 +5,8 @@ const client = new Discord.Client();
 //var
 const acab = ["cop", "police"];
 const hewwo = ["Hewwo", "hewwo", "HEWWO"];
+const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?"];
+const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
 
 //randomizer for ping
 function randomswear(){
@@ -46,6 +48,15 @@ function randomacab(){
 	}
 }
 
+//randomizer for doyouyearn
+function randomyearn(){
+	var randomNumber = Math.round(Math.random()*2); 
+	switch(randomNumber){
+		case 0: return 'i yearn.';
+		case 1: return 'oh, yes. yes, i yearn. often i sit... and yearn';
+		case 2: return 'oh, yes. yes, i yearn. often i sit... and yearn. have you yearned?';
+	}
+}
 
 //console reply
 client.on("ready", () => {
@@ -65,6 +76,11 @@ client.on("message", (message) => {
     		message.channel.send("patbot dreams of electric sheep");
 	}
 	
+	//haveyouyearned responce
+	if((haveyouyearned.some(word => message.content.includes(word))) {
+    		message.channel.send("well, not recently. i've craved. constant craving. but i haven't yearned.");
+	}
+	
 	//text triggers random text
 	
 	//!swear ping
@@ -80,6 +96,11 @@ client.on("message", (message) => {
 	//hewwo
   	if(hewwo.some(word => message.content.includes(word))){
 		message.channel.send(randomhewwo());
+	}
+	
+	//doyouyearn
+  	if(doyouyearn.some(word => message.content.includes(word))){
+		message.channel.send(randomyearn());
 	}
 	
 //main end brackets	
