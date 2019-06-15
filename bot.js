@@ -74,29 +74,29 @@ client.on("message", (message) => {
 	//!patbot ping
 	if(message.content.includes("!patbot")) {
     		message.channel.send("patbot dreams of electric sheep");
-	}
+	}else
 	
 	//haveyouyearned responce
 	if(haveyouyearned.some(word => message.content.includes(word))) {
     		message.channel.send("well, not recently. i've craved. constant craving. but i haven't yearned.");
-	}
+	}else
 	
 	//text triggers random text
 	
 	//!swear ping
 	if(message.content.includes("!swear")){
 		message.channel.send(randomswear());
-	}
+	}else
 	
 	//acab
   	if(acab.some(word => message.content.includes(word))){
 		message.channel.send(randomacab());
-	}
+	}else
 	
 	//hewwo
   	if(hewwo.some(word => message.content.includes(word))){
 		message.channel.send(randomhewwo());
-	}
+	}else
 	
 	//doyouyearn
   	if(doyouyearn.some(word => message.content.includes(word))){
