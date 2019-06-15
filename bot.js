@@ -61,7 +61,7 @@ function randomyearn(){
 
 //randomizer for piss
 function randompiss(){
-	var randomNumber = Math.round(Math.random()*7); 
+	var randomNumber = Math.round(Math.random()*8); 
 	switch(randomNumber){
 		case 0: return '...piss? i told you i have an allergy';
 		case 1: return 'cmon, we ve been over this';
@@ -71,6 +71,7 @@ function randompiss(){
 		case 5: return 'are you a piss expert? is there a degree on your wall? i havent seen it';
 		case 6: return 'oh, a fellow pissologist';
 		case 7: return 'what, are you an expert in the study of pee?';
+		case 8: return 'piss off.';
 	}
 }
 
