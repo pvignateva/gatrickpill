@@ -59,18 +59,17 @@ function randomyearn(){
 }
 
 //randomizer for piss
-function randomPiss(){
-	var randomNumberPiss = Math.round(Math.random()*8); 
-	switch(randomNumberPiss){
+function randompiss(){
+	var randomNumber = Math.round(Math.random()*7); 
+	switch(randomNumber){
 		case 0: return '...piss? i told you i have an allergy';
 		case 1: return 'cmon, we ve been over this';
 		case 2: return 'no piss, no harm, just another false alarm';
 		case 3: return 'knock it off, kids';
 		case 4: return 'in this world it s piss or be pissed on';
-		case 5: return 'are you a piss expert? is there a degree on your wall? i havent seen it';
-		case 6: return 'oh, a fellow pissologist';
-		case 7: return 'what, are you an expert in the study of pee?';
-		case 8: return 'piss off.';
+		case 5: return 'oh, a fellow pissologist';
+		case 6: return 'what, are you an expert in the study of pee?';
+		case 7: return 'piss off';
 	}
 }
 
@@ -146,8 +145,8 @@ client.on("message", (message) => {
 	}else
 		
 	//piss
-	if(message.content.includes("piss")){
-		message.channel.send(randomPiss());
+	if(message.content.includes("!piss")){
+		message.channel.send(randompiss());
 	}else
 	
 	//acab
