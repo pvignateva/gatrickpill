@@ -87,9 +87,9 @@ client.on("message", (message) => {
 	//randomizer
 	
 	if(message.content.includes ("goof")) {
-	var response = options[Math.floor(Math.random()*options.length)];
-	msg.channel.send(response).then().catch(console.error);
-	}
+		var response = options[Math.floor(Math.random()*options.length)];
+		msg.channel.send(response);
+	}else
 		
 	//reply with emoji
 
