@@ -7,6 +7,7 @@ const acab = ["cop", "police"];
 const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
+const piss = ["piss", "p!ss". "PISS", "Piss"];
 
 //randomizer for ping
 function randomswear(){
@@ -55,6 +56,21 @@ function randomyearn(){
 		case 0: return 'i yearn.';
 		case 1: return 'oh, yes. yes, i yearn. often i sit... and yearn';
 		case 2: return 'oh, yes. yes, i yearn. often i sit... and yearn. have you yearned?';
+	}
+}
+
+//randomizer for piss
+function randompiss(){
+	var randomNumber = Math.round(Math.random()*7); 
+	switch(randomNumber){
+		case 0: return '...piss? i told you i have an allergy';
+		case 1: return 'cmon, we ve been over this';
+		case 2: return 'no piss, no harm, just another false alarm';
+		case 3: return 'knock it off, kids';
+		case 4: return 'in this world it s piss or be pissed on';
+		case 5: return 'are you a piss expert? is there a degree on your wall? i havent seen it';
+		case 6: return 'oh, a fellow pissologist';
+		case 7: return 'what, are you an expert in the study of pee?';
 	}
 }
 
@@ -120,6 +136,13 @@ client.on("message", (message) => {
 		}
 	}else
 	
+	//andy + teeth
+	if(message.content.includes ("andy")) {
+		if(message.content.includes ("teeth")) {
+			message.channel.send("shh");
+		}
+	}else 
+	
 	//text triggers random text
 	
 	//!swear ping
@@ -140,6 +163,11 @@ client.on("message", (message) => {
 	//doyouyearn
   	if(doyouyearn.some(word => message.content.includes(word))){
 		message.channel.send(randomyearn());
+	}
+	
+	//piss
+	if(piss.some(word => message.content.includes(word))){
+		message.channel.send(randompiss());
 	}
 	
 //main end brackets	
