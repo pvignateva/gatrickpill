@@ -92,7 +92,7 @@ client.on("message", (message) => {
   	}else
 
 	//69
-	if(message.content.includes(" 69 ")) {
+	if(message.content.includes("69")) {
 		message.channel.send("nice");
   	}else
 		
