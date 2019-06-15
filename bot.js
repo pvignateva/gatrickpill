@@ -10,7 +10,7 @@ function randomswear(){
 	switch(randomNumber){
 		case 0: return 'fuck';
 		case 1: return '1-800-eat-shit';
-		case 2: return 'moistey bastard biy';
+		case 2: return 'moistey bastard boy';
 		case 3: return 'oh fuck off';
 		case 4: return 'dickhead';
 		case 5: return 'piss off';
