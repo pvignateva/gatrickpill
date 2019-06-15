@@ -7,6 +7,7 @@ const acab = ["cop", "police"];
 const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
+const piss = ["piss"];
 
 //randomizer for hewwo
 function randomhewwo(){
@@ -158,9 +159,9 @@ client.on("message", (message) => {
   	if(doyouyearn.some(word => message.content.includes(word))){
 		message.channel.send(randomyearn());
 	}else
-		
-	//piss
-  	if(message.content.includes("piss")){
+	
+	//pee
+	if(piss.some(word => message.content.includes(word))){
 		message.channel.send(randompiss());
 	}
 	
