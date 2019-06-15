@@ -7,7 +7,7 @@ const acab = ["cop", "police"];
 const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
-const pee = ["piss", "pee"];
+const pee = ["piss", "pee", "Piss", "PISS"];
 
 //randomizer for hewwo
 function randomhewwo(){
