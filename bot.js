@@ -81,6 +81,45 @@ client.on("message", (message) => {
     		message.channel.send("well, not recently. i've craved. constant craving. but i haven't yearned.");
 	}else
 	
+	// sir this is mcdonalds
+	if(message.content.includes("can i get uhh")) {
+    		message.channel.send("sir, this is mcdonalds");
+	}else
+	
+	//stummy huwt
+	if(message.content.includes("stummy huwt")) {
+    		message.channel.send("stummy huwt! stummy huwt! i got a bad tummy mistew cybewpunk! i got go sweepy now!");
+  	}else
+
+	//69
+	if(message.content.includes(" 69 ")) {
+		message.channel.send("nice");
+  	}else
+		
+	//vore
+	if(message.content.includes("vore")) {
+		message.reply("i will kill you and you will be dead");
+  	}else
+		
+	//terf
+	if(message.content.includes("terf")) {
+		message.channel.send("fuck terfs");
+	}else
+	
+	//time to oppress andy
+	if(message.content.includes("to oppress andy")) {
+    		message.channel.send("andy did nothing wrong, ever");
+  	}else
+		
+	//conditoned text triggers text
+		
+	//is _ good?	
+	if(message.content.includes ("is")) {
+		if(message.content.includes ("good?")) {
+			message.channel.send("boyp howduy");
+		}
+	}else
+	
 	//text triggers random text
 	
 	//!swear ping
