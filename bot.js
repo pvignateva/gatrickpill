@@ -152,7 +152,7 @@ client.on("message", (message) => {
 	
 	//hewwo
   	if(hewwo.some(word => message.content.includes(word))){
-		message.channel.send(randomhewwo());
+		message.channel.send(randompiss());
 	}else
 	
 	//doyouyearn
@@ -162,7 +162,7 @@ client.on("message", (message) => {
 	
 	//pee
 	if(pee.some(word => message.content.includes(word))){
-		message.channel.send(randompiss());
+		message.channel.send(randomhewwo());
 	}
 	
 //main end brackets	
