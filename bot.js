@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 //var
+const acab = ["cop", "police"];
 
 //randomizer for ping
 function randomswear(){
@@ -55,12 +56,12 @@ client.on("message", (message) => {
 	//text triggers random text
 	
 	//!swear ping
-	if(message.content == "!swear"){
+	if(message.content.includes("!swear")){
 		message.channel.send(randomswear());
 	}
 	
 	//acab ping
-  	if(message.content == "cop"){
+  	if(acab.some(word => message.content.includes(word))){
 		message.channel.send(randomacab());
 	}
 	
