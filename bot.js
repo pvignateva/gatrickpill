@@ -22,6 +22,18 @@ function randomswear(){
 	}
 }
 
+//randomizer for acab
+function randomacab(){
+	var randomNumber = Math.round(Math.random()*3); 
+	switch(randomNumber){
+		case 0: return 'all cops are bastards';
+		case 1: return 'acab';
+		case 2: return 'fuck cops!';
+		case 3: return 'fuck blue lives';
+	}
+}
+
+
 //console reply
 client.on("ready", () => {
   console.log("sir, yes sir!!");
@@ -33,17 +45,24 @@ client.on("message", (message) => {
 	//turn off replying to bots
 	if (message.author.bot) return;
 	
-	//ping text triggers text
+	//text triggers text
+	
+	//!patbot ping
 	if(message.content.includes("!patbot")) {
     		message.channel.send("patbot dreams of electric sheep");
 	}
 	
-	//ping text triggers random text
+	//text triggers random text
+	
+	//!swear ping
 	if(message.content == "!swear"){
 		message.channel.send(randomswear());
 	}
 	
-  	
+	//acab ping
+  	if(message.content == "cop"){
+		message.channel.send(randomacab());
+	}
 	
 //main end brackets	
 });
