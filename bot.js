@@ -7,7 +7,6 @@ const acab = ["cop", "police"];
 const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
-const piss = ["piss", "PISS", "Piss"];
 
 //randomizer for ping
 function randomswear(){
@@ -167,7 +166,7 @@ client.on("message", (message) => {
 	}else
 	
 	//piss
-	if(piss.some(word => message.content.includes(word))){
+	if(message.content.includes("piss")){
 		message.channel.send(randompiss());
 	}
 	
