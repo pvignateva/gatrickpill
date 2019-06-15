@@ -87,11 +87,6 @@ client.on("message", (message) => {
 	
 	//text triggers text
 	
-	//!patbot ping
-	if(message.content.includes("!patbot")) {
-    		message.channel.send("patbot dreams of electric sheep");
-	}else
-	
 	//haveyouyearned responce
 	if(haveyouyearned.some(word => message.content.includes(word))) {
     		message.channel.send("well, not recently. i've craved. constant craving. but i haven't yearned.");
