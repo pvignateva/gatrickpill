@@ -59,9 +59,9 @@ function randomyearn(){
 }
 
 //randomizer for piss
-function randompiss(){
-	var randomNumber = Math.round(Math.random()*8); 
-	switch(randomNumber){
+function randomPiss(){
+	var randomNumberPiss = Math.round(Math.random()*8); 
+	switch(randomNumberPiss){
 		case 0: return '...piss? i told you i have an allergy';
 		case 1: return 'cmon, we ve been over this';
 		case 2: return 'no piss, no harm, just another false alarm';
@@ -147,7 +147,7 @@ client.on("message", (message) => {
 		
 	//piss
 	if(message.content.includes("piss")){
-		message.channel.send(randompiss());
+		message.channel.send(randomPiss());
 	}else
 	
 	//acab
