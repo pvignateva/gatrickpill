@@ -24,8 +24,8 @@ function randomswear(){
 	}
 }
 
-//randomizer for acab
-function randomacab(){
+//randomizer for hewwo
+function randomhewwo(){
 	var randomNumber = Math.round(Math.random()*3); 
 	switch(randomNumber){
 		case 0: return 'H….hewwo? (;•́︿•̀ ;) Is anybody out here? (　•́ ‸•̀｀) Hewwo??? Hewwo?!?!?  Σ ( •́△•̀|||) )';
@@ -35,7 +35,7 @@ function randomacab(){
 	}
 }
 
-//randomizer for hewwo
+//randomizer for acab
 function randomacab(){
 	var randomNumber = Math.round(Math.random()*3); 
 	switch(randomNumber){
@@ -72,12 +72,12 @@ client.on("message", (message) => {
 		message.channel.send(randomswear());
 	}
 	
-	//acab ping
+	//acab
   	if(acab.some(word => message.content.includes(word))){
 		message.channel.send(randomacab());
 	}
 	
-	//acab ping
+	//hewwo
   	if(hewwo.some(word => message.content.includes(word))){
 		message.channel.send(randomhewwo());
 	}
