@@ -11,6 +11,7 @@ function randomswear(){
 		case 0: return 'fuck';
 		case 1: return 'shit';
 		case 2: return 'asshole';
+		case 3: return 'bastard';
 	}
 }
 
@@ -32,7 +33,7 @@ client.on("message", (message) => {
 	
 	//ping text triggers random text
 	if(message.content == "!swear"){
-		message.reply(randomswear());
+		message.channel.send(randomswear());
 	}
 	
   	
