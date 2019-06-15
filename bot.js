@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 //randomizer for ping
 function randomswear(){
-	var randomNumber = Math.round(Math.random()*2); // 0, 1 or 2
+	var randomNumber = Math.round(Math.random()*3); // 0, 1 or 2
 	switch(randomNumber){
 		case 0: return 'fuck';
 		case 1: return 'shit';
