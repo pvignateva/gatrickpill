@@ -97,7 +97,7 @@ client.on("message", (message) => {
     		message.channel.send("well, not recently. i've craved. constant craving. but i haven't yearned.");
 	}else
 	
-	// sir this is mcdonalds
+	//sir this is mcdonalds
 	if(message.content.includes("can i get uhh")) {
     		message.channel.send("sir, this is mcdonalds");
 	}else
@@ -163,7 +163,7 @@ client.on("message", (message) => {
 	//doyouyearn
   	if(doyouyearn.some(word => message.content.includes(word))){
 		message.channel.send(randomyearn());
-	}
+	}else
 	
 	//piss
 	if(piss.some(word => message.content.includes(word))){
