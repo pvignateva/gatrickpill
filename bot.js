@@ -77,7 +77,7 @@ client.on("message", (message) => {
 	}
 	
 	//haveyouyearned responce
-	if((haveyouyearned.some(word => message.content.includes(word))) {
+	if(haveyouyearned.some(word => message.content.includes(word))) {
     		message.channel.send("well, not recently. i've craved. constant craving. but i haven't yearned.");
 	}
 	
