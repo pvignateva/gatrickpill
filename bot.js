@@ -152,7 +152,7 @@ client.on("message", (message) => {
 		
 	//bread
 	if(message.content.includes("bread makes you fat")){
-        	message.channel.send("BREAD MAKES YOU **FAT**??!!?!??!?");
+        	message.channel.send("BREAD MAKES YOU *FAT*??!!?!??!?");
 	}else
 	
 	//acab
