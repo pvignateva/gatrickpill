@@ -43,35 +43,14 @@ function randomyearn(){
 
 //randomizer for piss
 function randompiss(){
-	var randomNumber = Math.round(Math.random()*7); 
+	var randomNumber = Math.round(Math.random()*4); 
 	switch(randomNumber){
 		case 0: return '...piss? i told you i have an allergy';
 		case 1: return 'cmon, we ve been over this';
-		case 2: return 'no piss, no harm, just another false alarm';
-		case 3: return 'knock it off, kids';
-		case 4: return 'in this world it s piss or be pissed on';
-		case 5: return 'oh, a fellow pissologist';
-		case 6: return 'what, are you an expert in the study of pee?';
-		case 7: return 'piss off';
+		case 2: return 'knock it off, kids';
+		case 3: return 'what, are you an expert in the study of pee?';
+		case 4: return 'piss off';
 	}
-}
-
-//randomizer for ping
-function randomswear(){
-    var randomNumber = Math.round(Math.random()*10); 
-    switch(randomNumber){
-        case 0: return 'fuck';
-        case 1: return '1-800-eat-shit';
-        case 2: return 'moistey bastard boy';
-        case 3: return 'oh fuck off';
-        case 4: return 'dickhead';
-        case 5: return 'piss off';
-        case 6: return 'heck';
-        case 7: return 'bloody hell';
-        case 8: return 'wanker';
-        case 9: return 'you absolute fool';
-        case 10: return 'get fucked';
-    }
 }
 
 //randomizer for situation
@@ -90,6 +69,7 @@ function randomsad(){
 		case 0: return 'if you peed your pants, i would pretend it just got wet from the rain';
 		case 1: return 'okay, you listen up and you listen hard, bucko! the next sound you hear will be me knocking on your door. the one after that, will be me hugging you real tight';
 		case 2: return 'queres?? *passes serotonin*';
+		case 3: return 'you re a miracle, or it s just al the stray code that makes me hallucinate';
 	}
 }
 
@@ -168,6 +148,13 @@ client.on("message", (message) => {
 			message.reply("shh");
 		}
 	}else 
+		
+	//ugly
+	if(message.content.includes("i")) {
+		if(message.content.includes("ugly")) {
+			message.reply("but maybe everyone’s a little bit ugly. yeah, maybe we’re all just ugly, dying sacks of shit, and maybe all it’ll take is one person to just be okay with that, and then the whole world will be dancing and singing and farting, and everyone will feel a little bit less alone.");
+		}
+	}else
 	
 	//situation1
 	if(message.content.includes("wait")) {
@@ -180,6 +167,13 @@ client.on("message", (message) => {
 	if(message.content.includes("we")) {
 		if(message.content.includes("?")) {
 			message.channel.send(randomsituation());
+		}
+	}else 
+		
+	//i m sad
+	if(message.content.includes("i")) {
+		if(message.content.includes("sad")) {
+			message.channel.send(randomsad());
 		}
 	}else 
 		
