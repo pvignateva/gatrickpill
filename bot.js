@@ -135,6 +135,13 @@ client.on("message", (message) => {
 			message.channel.send("boyp howduy");
 		}
 	}else
+		
+	//i have bad news	
+	if(message.content.includes ("bad news")) {
+		if(message.content.includes("have")) {
+			message.channel.send("is it the news that we suck?");
+		}
+	}else
 	
 	//andy + teeth
 	if(message.content.includes("andy")) {
