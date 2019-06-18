@@ -83,6 +83,16 @@ function randomsituation(){
 	}
 }
 
+//randomizer for i m sad
+function randomsad(){
+	var randomNumber = Math.round(Math.random()*2); 
+	switch(randomNumber){
+		case 0: return 'if you peed your pants, i would pretend it just got wet from the rain';
+		case 1: return 'okay, you listen up and you listen hard, bucko! the next sound you hear will be me knocking on your door. the one after that, will be me hugging you real tight';
+		case 2: return 'queres?? *passes serotonin*';
+	}
+}
+
 //console reply
 client.on("ready", () => {
   console.log("sir, yes sir!!");
