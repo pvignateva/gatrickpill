@@ -8,7 +8,6 @@ const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
 const fuckpat = ["fuck patbot", "fuck pat", "patbot sucks", "patrick sucks", "pat sucks"];
-const situation = ["didn't you get my e-mail explaining the situation?", "maybe so"];
 
 //randomizer for hewwo
 function randomhewwo(){
@@ -73,6 +72,15 @@ function randomswear(){
         case 9: return 'you absolute fool';
         case 10: return 'get fucked';
     }
+}
+
+//randomizer for situation
+function randomsituation(){
+	var randomNumber = Math.round(Math.random()*1); 
+	switch(randomNumber){
+		case 0: return 'didnt you get my e-mail explaining the situation?';
+		case 1: return 'maybe so';
+	}
 }
 
 //console reply
@@ -154,14 +162,14 @@ client.on("message", (message) => {
 	//situation1
 	if(message.content.includes("wait")) {
 		if(message.content.includes("?")) {
-			message.channel.send(situation());
+			message.channel.send(randomsituation());
 		}
 	}else 
 		
 	//situation2
 	if(message.content.includes("we")) {
 		if(message.content.includes("?")) {
-			message.channel.send(situation());
+			message.channel.send(randomsituation());
 		}
 	}else 
 		
