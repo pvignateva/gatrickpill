@@ -149,6 +149,11 @@ client.on("message", (message) => {
   	if(message.content.includes("!swear")){
         	message.channel.send(randomswear());
 	}else
+		
+	//bread
+	if(message.content.includes("bread makes you fat")){
+        	message.channel.send("BREAD MAKES YOU **FAT**??!!?!??!?");
+	}else
 	
 	//acab
   	if(acab.some(word => message.content.includes(word))){
