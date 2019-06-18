@@ -8,6 +8,7 @@ const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
 const fuckpat = ["fuck patbot", "fuck pat", "patbot sucks", "patrick sucks", "pat sucks"];
+const situation = ["didn't you get my e-mail explaining the situation?", "maybe so"];
 
 //randomizer for hewwo
 function randomhewwo(){
@@ -146,10 +147,24 @@ client.on("message", (message) => {
 	//andy + teeth
 	if(message.content.includes("andy")) {
 		if(message.content.includes("teeth")) {
-			message.channel.send("shh");
+			message.reply("shh");
 		}
 	}else 
 	
+	//situation1
+	if(message.content.includes("wait")) {
+		if(message.content.includes("?")) {
+			message.channel.send(situation());
+		}
+	}else 
+		
+	//situation2
+	if(message.content.includes("we")) {
+		if(message.content.includes("?")) {
+			message.channel.send(situation());
+		}
+	}else 
+		
 	//text triggers random text
 		
 	//!swear ping
