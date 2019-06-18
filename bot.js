@@ -105,6 +105,11 @@ client.on("message", (message) => {
 	if(message.content.includes("69")) {
 		message.channel.send("nice");
   	}else
+	
+	//straight rights
+	if(message.content.includes("straight rights")) {
+		message.channel.send("straight rights to shut the fuck up!");
+  	}else
 		
 	//vore
 	if(message.content.includes("vore")) {
