@@ -8,6 +8,7 @@ const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
 const fuckpat = ["fuck patbot", "fuck pat", "patbot sucks", "patrick sucks", "pat sucks"];
+const ugly = ["m ugly", "feel ugly"];
 
 //randomizer for hewwo
 function randomhewwo(){
@@ -150,10 +151,8 @@ client.on("message", (message) => {
 	}else 
 		
 	//ugly
-	if(message.content.includes("i")) {
-		if(message.content.includes("ugly")) {
+	if(ugly.some(word => message.content.includes(word))){
 			message.reply("but maybe everyone’s a little bit ugly. yeah, maybe we’re all just ugly, dying sacks of shit, and maybe all it’ll take is one person to just be okay with that, and then the whole world will be dancing and singing and farting, and everyone will feel a little bit less alone.");
-		}
 	}else
 	
 	//situation1
