@@ -64,7 +64,7 @@ client.on("message", (message) => {
 	}else
 	
 	//69
-	if(message.content.startswith("69")) {
+	if(message.content.startsWith("69")) {
 		message.channel.send("nice");
   	}else
 	
@@ -74,7 +74,7 @@ client.on("message", (message) => {
   	}else
 		
 	//vore
-	if(message.content.startswith("vore")) {
+	if(message.content.startsWith("vore")) {
 		message.reply("i will kill you and you will be dead");
   	}else
 		
