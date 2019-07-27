@@ -106,7 +106,7 @@ client.on("message", (message) => {
 	//love soupbot
 	if(message.content.includes("love")) {
 		if(message.content.includes("soupbot")) {
-			message.channel.send("god is punishing me");
+			message.channel.send("and i love you, random citizen!");
 		}
 	}else 
 	
@@ -117,6 +117,10 @@ client.on("message", (message) => {
 		
 	if(message.content.includes("press f")) {
 		message.react("588531577072386049");
+	}else
+	
+	if(message.content.includes("validation")) {
+		message.react("586593863200931890");
 	}else
 				
 	//text triggers random text
