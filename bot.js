@@ -97,12 +97,17 @@ client.on("message", (message) => {
 		}
 	}else 
 	
-	//andy + teeth
+	//love soupbot
 	if(message.content.includes("love")) {
 		if(message.content.includes("soupbot")) {
-			message.reply("god is punishing me");
+			message.channel.send("god is punishing me");
 		}
 	}else 
+	
+	//emoji react
+	if(message.content.includes("uwu")) {
+		message.react("586716182036348928");
+	}else
 				
 	//text triggers random text
 	
