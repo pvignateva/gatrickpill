@@ -7,6 +7,7 @@ const acab = ["acab", "fuck the police"];
 const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
+const ily = ["ily", "i love you", "i wuv u", "i lov u", "i love u"];
 
 //randomizer for hewwo
 function randomhewwo(){
@@ -88,6 +89,11 @@ client.on("message", (message) => {
     		message.channel.send("andy did nothing wrong, ever");
   	}else
 		
+	//ily
+	if(ily.some(word => message.content.includes(word))) {
+    		message.channel.send("well, that s gay.");
+	}else
+		
 	//conditoned text triggers text
 		
 	//andy + teeth
@@ -107,6 +113,10 @@ client.on("message", (message) => {
 	//emoji react
 	if(message.content.includes("uwu")) {
 		message.react("586716182036348928");
+	}else
+		
+	if(message.content.includes("press f")) {
+		message.react("588531577072386049");
 	}else
 				
 	//text triggers random text
