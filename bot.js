@@ -96,6 +96,13 @@ client.on("message", (message) => {
 			message.reply("shh");
 		}
 	}else 
+	
+	//andy + teeth
+	if(message.content.includes("love")) {
+		if(message.content.includes("soupbot")) {
+			message.reply("god is punishing me");
+		}
+	}else 
 				
 	//text triggers random text
 	
