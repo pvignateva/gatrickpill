@@ -7,7 +7,7 @@ const acab = ["acab", "fuck the police"];
 const hewwo = ["Hewwo", "hewwo", "HEWWO"];
 const doyouyearn = ["you ever yearn?", "u ever yearn", "Do you ever yearn?", "do you yearn", "do u yearn"];
 const haveyouyearned = ["Have you yearned?", "u yearned", "you yearned?"];
-const ily = ["ily", "i love you", "i wuv u", "i lov u", "i love u". "i wuv you"];
+const ily = ["ily", "i love you", "i wuv u", "i lov u", "i love u", "i wuv you"];
 
 //randomizer for hewwo
 function randomhewwo(){
